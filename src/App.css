@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+:root {
+  --color-dark: rgb(14, 14, 14);
+  --color-dark-a: rgb(39, 39, 35);
+  --color-light: rgb(255, 255, 255);
+  --color-light-a: rgb(236, 236, 236);
+  --color-main: rgb(123, 174, 35);
+  --color-main-a: rgb(233, 97, 37);
+  --size-width-max: 1200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.max-width-custom {
+  width: 100%;
+  max-width: var(--size-width-max);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.link {
+  transition: all 300ms;
+}
+.link:hover {
+  color: var(--color-main-a);
+  cursor: pointer;
+}
+
+input {
+  padding: 5px;
+  background-color: var(--color-light-a);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button.transparent {
+  background-color: transparent;
+}
+
+button:hover {
+  color: var(--color-main);
+}
+
+button.color {
   color: white;
+  background-color: var(--color-main);
 }
 
-.App-link {
-  color: #61dafb;
+button.color-a {
+  color: white;
+  background-color: var(--color-main-a);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.color:hover,
+button.color-a:hover {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
 }

@@ -1,0 +1,30 @@
+.home-top-most-content {
+  display: flex;
+}
+
+.home-top-most-content div {
+  box-sizing: border-box;
+}
+.home-top-most-content div.imgBox {
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+.home-top-most-content img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 780px) {
+  .home-top-most-content {
+    flex-direction: column-reverse;
+  }
+  .offers {
+    flex-direction: row;
+  }
+}

@@ -15,6 +15,12 @@ const HomeTopMost = () => {
           <div className="imgBox">
             <img src="./images/home-banners/meat.jpg" alt="meat" />
           </div>
+          <div className="imgBox">
+            <img
+              src="./images/home-banners/paki.png"
+              alt="Pakistani-Products"
+            />
+          </div>
         </div>
         <div className="imgBox carosel">
           <img

@@ -8,7 +8,7 @@ type Props = {
 
 const Card: React.FC<Props> = ({ data }) => {
   return (
-    <div className="card">
+    <div style={{ margin: "10px" }} className="card">
       <img src={data.image} alt={data.name} style={{ width: "100%" }} />
       <div className="container">
         <h4>

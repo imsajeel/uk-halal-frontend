@@ -9,7 +9,14 @@ type Props = {
 const CardList: React.FC<Props> = ({ data }) => {
   if (data.length > 0) {
     return (
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
         {data.map((item, i) => (
           <Card key={i} data={item} />
         ))}

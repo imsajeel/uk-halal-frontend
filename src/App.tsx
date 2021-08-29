@@ -6,7 +6,6 @@ import * as product from "./db/repositories/products";
 import { useState } from "react";
 import { useEffect } from "react";
 import CardList from "./components/CardList/CardList";
-import Loading from "./components/Loading/Loading";
 
 function App() {
   const [products, setProducts] = useState<Array<product.Product>>([]);

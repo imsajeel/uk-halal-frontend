@@ -1,0 +1,11 @@
+.loading-page {
+  color: var(--color-dark-a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-page > img {
+  width: 100%;
+  max-width: 500px;
+}

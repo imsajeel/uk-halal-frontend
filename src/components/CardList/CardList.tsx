@@ -1,5 +1,6 @@
 import React from "react";
 import { Product } from "../../db/repositories/products";
+import Loading from "../Loading/Loading";
 import Card from "./Card";
 
 type Props = {
@@ -13,7 +14,7 @@ const CardList: React.FC<Props> = ({ data }) => {
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "flex-start",
           flexWrap: "wrap",
         }}
       >
@@ -23,7 +24,7 @@ const CardList: React.FC<Props> = ({ data }) => {
       </div>
     );
   } else {
-    return <div>Loading.....</div>;
+    return <Loading />;
   }
 };
 

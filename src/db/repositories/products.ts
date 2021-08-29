@@ -6,10 +6,11 @@ const COLLECTION_NAME = "Products";
 
 // mapping the product document
 export type Product = {
+  id: string;
   name: string;
   brand: string;
   volume: string;
-  price: number;
+  price: number | string;
   pricePrevious?: number;
   rating?: number;
   sold?: number;
